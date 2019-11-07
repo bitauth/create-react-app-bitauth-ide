@@ -1,10 +1,10 @@
 {
-  "name": "react-scripts",
+  "name": "@bitauth/react-scripts-bitauth-ide",
   "version": "3.2.0",
   "description": "Configuration and scripts for Create React App.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/facebook/create-react-app.git",
+    "url": "https://github.com/bitauth/create-react-app-bitauth-ide.git",
     "directory": "packages/react-scripts"
   },
   "license": "MIT",
@@ -12,7 +12,7 @@
     "node": ">=8.10"
   },
   "bugs": {
-    "url": "https://github.com/facebook/create-react-app/issues"
+    "url": "https://github.com/bitauth/create-react-app-bitauth-ide/issues"
   },
   "files": [
     "bin",
@@ -60,6 +60,8 @@
     "jest-resolve": "24.9.0",
     "jest-watch-typeahead": "0.4.0",
     "mini-css-extract-plugin": "0.8.0",
+    "monaco-editor": "^0.18.1",
+    "monaco-editor-webpack-plugin": "^1.7.0",
     "optimize-css-assets-webpack-plugin": "5.0.3",
     "pnp-webpack-plugin": "1.5.0",
     "postcss-flexbugs-fixes": "4.1.0",
@@ -69,6 +71,7 @@
     "postcss-safe-parser": "4.0.1",
     "react-app-polyfill": "^1.0.4",
     "react-dev-utils": "^9.1.0",
+    "react-monaco-editor": "^0.32.1",
     "resolve": "1.12.0",
     "resolve-url-loader": "3.1.0",
     "sass-loader": "7.2.0",
