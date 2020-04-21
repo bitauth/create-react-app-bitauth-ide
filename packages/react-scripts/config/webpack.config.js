@@ -8,6 +8,8 @@
 // @remove-on-eject-end
 'use strict';
 
+const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin');
+
 const fs = require('fs');
 const path = require('path');
 const webpack = require('webpack');
@@ -699,6 +701,7 @@ module.exports = function(webpackEnv) {
           // The formatter is invoked directly in WebpackDevServerUtils during development
           formatter: isEnvProduction ? typescriptFormatter : undefined,
         }),
+      new MonacoWebpackPlugin({ languages: ['json'] }),
     ].filter(Boolean),
     // Some libraries import Node modules but don't use them in the browser.
     // Tell webpack to provide empty mocks for them so importing them works.
